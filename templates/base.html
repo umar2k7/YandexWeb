@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/program.css"/>
+    <meta name="google-site-verification" content="pYV9uCjZ9IZ6oGWY1fYbKbA0PnyFXyBoUrakJEdtqb4" />
+
+    <title>{{ title }}</title>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(93356327, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/93356327" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+<body class="page">
+<div class="page__container">
+    <header class="header">
+
+        <a href="#">
+            <img src="/static/img/text.svg" class="logo__menu">
+        </a>
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="nav">
+           <ul class="header_list">
+                <li class="header_wrap"><a href="cre_site" class="header_link">Конструкторы сайтов</a></li>
+                <li class="header_wrap"><a href="/cms" class="header_link">CMS-системы</a></li>
+                <li class="header_wrap"><a href="html" class="header_link">Самостоятельное создание сайта</a></li>
+                <li class="header_wrap"><a href="php" class="header_link">PHP</a></li>
+                <li class="header_wrap"><a href="java" class="header_link">Java</a></li>
+                <li class="header_wrap"><a href="python" class="header_link">Python</a></li>
+           </ul>
+            {% if current_user.is_authenticated %}
+    <a class="navbar-brand" href="/logout">{{ current_user.name }}</a>
+{% else %}
+    <p>
+        <a class="btn btn-primary " href="/register">Зарегистрироваться</a>
+        <a class="btn btn-success" href="/login">Войти</a>
+    </p>
+{% endif %}
+        </nav>
+
+    </header>
+    <main class="content">
+        <section class="lead">
+            <h1 class="lead__title"><a class="lead__link" href="home">Создание Сайтов</a></h1>
+            <!--                <img src="/static/img/VECTOR.png">-->
+
+        </section>
+    </main>
+</div>
+
+<main role="main" class="container">
+    <img src="../static/img/JAVA_picture" alt="">
+    {% block content %}{% endblock %}
+</main>
+
+<div class="page__container">
+    <footer class="footer">
+        <h2 class="footer__title">Путеводитель</h2>
+        <div class="footer__wrap">
+            <div>
+                <li class="header_wrap"><a href="cre_site" class="header_link">Конструкторы сайтов</a></li>
+                <li class="header_wrap"><a href="cms" class="header_link">CMS-системы</a></li>
+                <li class="header_wrap"><a href="html" class="header_link">Самостоятельное создание сайта</a></li>
+                <li class="header_wrap"><a href="php" class="header_link">PHP</a></li>
+                <li class="header_wrap"><a href="java" class="header_link">Java</a></li>
+                <li class="header_wrap"><a href="python" class="header_link">Python</a></li>
+            </div>
+            <div class="footer__adress">
+                <p class="ur-adress"><b>Тел.: </b><a class="footer__link" href="tel:+7 989 653-82-35
++7 928 680-91-49"><b>+7 989 653-82-35<br>
+                    +7 928 680-91-49</b></a></p>
+
+                <div class="footer__telegram">
+                   <a href="https://t.me/mr_window"><p class="telegram__text">Мой телеграм:@mr_window</p></a>
+                </div>
+                <div class="footer__autor "><b>Проект Яндекс Лицея<br/></b></div>
+
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+</body>
+</html>

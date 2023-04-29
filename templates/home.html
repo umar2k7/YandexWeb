@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+
+    <div class="center">
+        <h1>Hello {{ login }}</h1>
+    </div>
+{% endblock %}

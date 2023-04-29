@@ -1,0 +1,58 @@
+.dd_submenu {
+    display: none;
+    opacity: 0;
+    background: #268944;
+    justify-content: center;
+    align-items: center;
+    top: 90px;
+    position: absolute;
+    padding: 20px;
+    border-bottom: solid 3px #0F752F;
+}
+
+
+.topmenubtn:hover .dd_submenu {
+    display: block;
+    z-index: 1000000;
+    opacity: 1;
+    width: 275px;
+    margin-left: -25px;
+    transition: all .3s ease-in-out;
+
+}
+
+
+.dd_submenu div {
+    padding: 10px;
+}
+
+.dd_submenu div:hover {
+    background: #53B978;
+
+}
+
+
+@media (min-width: 1400px) {
+    .menuflexstart {
+        # margin-left: 232px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .menuflexstart {
+        # margin-left: 160px !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .menuflexstart {
+        # margin-left: 130px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .menuflexstart {
+        # margin-left: 100px !important;
+    }
+}

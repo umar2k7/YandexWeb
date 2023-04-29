@@ -1,0 +1,338 @@
+.footer {
+ background: #0F752F;
+ color: white;
+ font-family: Gilroy;
+}
+
+
+.hdr-1 {
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 40px;
+ line-height: 48px;
+ color: #FFFFFF;
+}
+
+.footer-text {
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 20px;
+ color: #FFFFFF;
+}
+
+
+.input-footer {
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: normal;
+ max-width: 100%;
+ height: 54px;
+ width: 100%;
+ border: 0px;
+
+}
+
+.input-submit {
+ background: #53B978;
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 15px;
+ text-align: center;
+    line-height: 15px;
+
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ height: 54px;
+ width: 100%;
+   white-space: normal;
+  cursor: pointer;
+}
+
+
+
+
+.input-submit:hover {
+ background: #00853E;
+}
+
+
+.input-submit-red  {
+ background: red;
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 17px;
+ text-align: center;
+ line-height: 1.5;
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ min-height: 94px;
+ white-space: normal;
+ cursor: pointer;
+ text-transform: uppercase;
+ padding: 20px 40px 20px 40px;
+}
+
+.input-submit-red:hover {
+ background: #ff726f;
+
+}
+
+@media (max-width: 600px) {
+  .input-submit-red  {
+    font-size: 14px!important;
+  }
+}
+
+
+
+
+
+
+
+.input-submit-gold {
+ background: #BB8E27;
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 15px;
+ text-align: center;
+ line-height: 15px;
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ height: 54px;
+ white-space: normal;
+ cursor: pointer;
+ text-transform: uppercase;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+.input-submit-gold:hover {
+ opacity: 0.8;
+
+}
+
+
+
+.input-submit-green {
+ background: #00853E;
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 15px;
+ text-align: center;
+ line-height: 15px;
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ height: 54px;
+ white-space: normal;
+ cursor: pointer;
+ text-transform: uppercase;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+.input-submit-green:hover {
+ background: #53B978;
+
+}
+
+.input-submit-free {
+ background: none;
+ font-family: Gilroy;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 15px;
+ text-align: center;
+ line-height: 15px;
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ border: solid 1px #53B978;
+ height: 54px;
+ white-space: normal;
+ cursor: pointer;
+ text-transform: uppercase;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+
+.input-submit-free:hover {
+ background: #00853E;
+
+}
+
+
+.input-submit-free-mini {
+ background: none;
+ font-family: Gilroy;
+ font-style: normal;
+ font-size: 17px;
+ text-align: center;
+ line-height: 17px;
+ border: 0px;
+ max-width: 100%;
+ color: white!important;
+ border: solid 1px #53B978;
+ height: 45px;
+ white-space: nowrap;
+ cursor: pointer;
+ text-transform: uppercase;
+ padding: 14px;
+ width: 50px;
+}
+
+
+.input-submit-free-mini:hover {
+ background: #00853E;
+
+}
+
+
+
+@media screen and (max-width: 386px) {
+.input-submit-green {
+  font-size: 12px;
+  padding: 0px;
+
+ }
+.input-submit-free {
+  font-size: 12px;
+  padding: 0px;
+ }
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+.input-submit-green {
+  width: 100%;
+ }
+
+.input-submit-free {
+  width: 100%;
+ }
+
+}
+
+
+
+.footer-text-small {
+ font-family: Gilroy;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* or 125% */
+
+
+color: #FFFFFF;
+}
+
+
+
+.rbasket {
+position: fixed;
+right: 0;
+top: 300px;
+width: 60px;
+height: 100px;
+background: #00853E;
+color: white;
+padding: 10px;
+text-align: center;
+font-weight: 600;
+font-size: 20px!important;
+}
+
+.rbasket a{
+text-decoration: none;
+color: white;
+}
+
+
+.basketcounts {
+width: 65px;
+}
+
+
+
+.baskettable, .ishop {
+  font-family: Gilroy;
+}
+
+.itogokoplate {
+   font-family: Gilroy;
+   color: white;
+   font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.baskettable td{
+  font-size: 15px!important;
+ }
+.basketcounts {
+  width: 45px;
+ }
+}
+
+
+@media screen and (max-width: 450px) {
+.smhide{
+  display: none;
+ }
+
+ .tobasket {
+  width: 100%!important;
+ }
+}
+
+
+.tooltip-inner {
+    background-color: #00853E!important;
+    color: #fff;
+   /**/
+}
+
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before, .bs-tooltip-bottom .tooltip-arrow::before {
+   border-bottom-color: #00853E!important;
+}
+
+
+
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before, .bs-tooltip-end .tooltip-arrow::before {
+
+    border-right-color: #00853E;
+}
+
+
+
+
+
+
+.gilroy {
+  font-family: Gilroy!important;
+}
+
+
+
+
+
+
